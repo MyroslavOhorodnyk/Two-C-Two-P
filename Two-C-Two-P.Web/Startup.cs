@@ -1,10 +1,16 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Two_C_Two_P.Core.Interfaces;
+using Two_C_Two_P.Core.Interfaces.Services;
+using Two_C_Two_P.Core.Service;
+using Two_C_Two_P.Infrastructure;
+using Two_C_Two_P.Infrastructure.Models;
 
 namespace Two_C_Two_P.Web
 {
@@ -21,11 +27,20 @@ namespace Two_C_Two_P.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddAutoMapper(typeof(Startup));
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddDbContext<TwoCTwoPContext>(options =>
+                options.UseSqlServer("Data Source=MOHORODNYK-NB;Initial Catalog=2c2p;Integrated Security=True"));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ITransactionService, TransactionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
