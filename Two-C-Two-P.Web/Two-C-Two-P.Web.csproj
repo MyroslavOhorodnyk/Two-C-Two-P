@@ -14,6 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.2" />
   </ItemGroup>
 
@@ -31,6 +32,11 @@
     <None Remove="ClientApp\src\app\transaction\transaction.module.ts" />
     <None Remove="ClientApp\src\app\transaction\upload\upload.component.ts" />
     <None Remove="ClientApp\src\app\transaction\view\view.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Two-C-Two-P.Core\Two-C-Two-P.Core.csproj" />
+    <ProjectReference Include="..\Two-C-Two-P.Infrastructure\Two-C-Two-P.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
