@@ -10,7 +10,7 @@ GO
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Transactions' and xtype='U')
 BEGIN
     CREATE TABLE Transactions (
-        [Id] [uniqueidentifier] NOT NULL,
+        [Id] [nvarchar](50) NOT NULL PRIMARY KEY,
         [Ammount] [decimal](19, 4) NOT NULL,
 		[Currency] [nvarchar](50) NOT NULL,
 		[TransactionDate] [datetimeoffset](7) NOT NULL,
