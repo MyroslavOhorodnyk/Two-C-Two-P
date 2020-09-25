@@ -29,5 +29,19 @@ namespace Two_C_Two_P.Infrastructure.Repositories
         {
             return await DbSet.ToListAsync();
         }
+
+        public async Task<TEntity> AddAsync(TEntity entity)
+        {
+            await DbSet.AddAsync(entity);
+
+            return entity;
+        }
+
+        public async Task<IReadOnlyList<TEntity>> AddRangeAsync(params TEntity[] entities)
+        {
+            await DbSet.AddRangeAsync(entities);
+
+            return entities;
+        }
     }
 }

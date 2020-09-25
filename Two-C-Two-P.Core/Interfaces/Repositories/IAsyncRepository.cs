@@ -8,5 +8,9 @@ namespace Two_C_Two_P.Core.Interfaces.Repositories
         Task<TEntity> GetByIdAsync(TKey id);
 
         Task<IReadOnlyList<TEntity>> ListAllAsync();
+
+        Task<TEntity> AddAsync(TEntity entity);
+
+        Task<IReadOnlyList<TEntity>> AddRangeAsync(params TEntity[] entities);
     }
 }

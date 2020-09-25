@@ -2,7 +2,7 @@
 
 namespace Two_C_Two_P.Core.Entities
 {
-    public class Transaction : EntityBase<Guid>
+    public class Transaction : EntityBase<string>
     {
         public decimal Ammount { get; set; }
         public string Currency { get; set; }

@@ -1,1 +1,24 @@
-<h3> Upload Transactions </h3>
+<div class="upload-form-wrapper">
+  <h3>Upload Transaction Data</h3>
+  <div id="fileuploader-container">
+    <div class="widget-container">
+      <input id="fileInput" type="file" (change)="fileChanged($event)" accept=".csv, .xml" #fileInput />
+      <button type="button" (click)="fileInput.click()">Pick File</button>
+      <button type="button" (click)="submit()">Upload</button>
+    </div>
+  </div>
+  <div class="validation-errors">
+    <div *ngIf="uploadResult?.errors?.length > 0" class="alert alert-danger">
+      <h4>Errors</h4>
+      <ul>
+        <li *ngFor="let error of uploadResult.errors">{{ error }}</li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="uploadResult?.info?.length > 0" class="alert alert-success">
+    <h4>Success</h4>
+    <ul>
+      <li *ngFor="let info of uploadResult.info">{{ info }}</li>
+    </ul>
+  </div>
+</div>
