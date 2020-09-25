@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { TransactionRoutingModule } from "./transaction-routing.module";
 
 import { TransactionComponent } from './transaction.component';
@@ -12,6 +13,7 @@ import { UploadComponent } from './upload/upload.component';
     TransactionComponent
   ],
   imports: [
+    CommonModule,
     TransactionRoutingModule
   ],
 })

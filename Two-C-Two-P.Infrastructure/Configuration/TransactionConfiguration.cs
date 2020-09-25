@@ -5,7 +5,7 @@ using Two_C_Two_P.Core.Entities;
 
 namespace Two_C_Two_P.Infrastructure.Configuration
 {
-    internal class TransactionConfiguration : EntityTypeConfigurationBase<Transaction, Guid>
+    internal class TransactionConfiguration : EntityTypeConfigurationBase<Transaction, string>
     {
         protected override void ConfigureInternal(EntityTypeBuilder<Transaction> builder)
         {

@@ -41,6 +41,7 @@ namespace Two_C_Two_P.Web
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ITransactionService, TransactionService>();
+            services.AddScoped<IUploadService, UploadService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -31,6 +31,7 @@
     <None Remove="ClientApp\src\app\transaction\transaction.component.ts" />
     <None Remove="ClientApp\src\app\transaction\transaction.module.ts" />
     <None Remove="ClientApp\src\app\transaction\upload\upload.component.ts" />
+    <None Remove="ClientApp\src\app\transaction\upload\upload.service.ts" />
     <None Remove="ClientApp\src\app\transaction\view\view.component.ts" />
   </ItemGroup>
 
@@ -45,6 +46,7 @@
     <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\upload\upload.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\transaction\upload\upload.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\view\view.component.ts" />
   </ItemGroup>
 
