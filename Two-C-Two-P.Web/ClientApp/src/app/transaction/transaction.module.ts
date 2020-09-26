@@ -6,6 +6,8 @@ import { TransactionComponent } from './transaction.component';
 import { ViewComponent } from './view/view.component';
 import { UploadComponent } from './upload/upload.component';
 
+import { AgGridModule } from 'ag-grid-angular';
+
 @NgModule({
   declarations: [
     ViewComponent,
@@ -14,7 +16,8 @@ import { UploadComponent } from './upload/upload.component';
   ],
   imports: [
     CommonModule,
-    TransactionRoutingModule
+    TransactionRoutingModule,
+    AgGridModule.withComponents([]),
   ],
 })
 export class TransactionModule { }

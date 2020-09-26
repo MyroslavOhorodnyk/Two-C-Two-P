@@ -29,7 +29,9 @@
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\transaction\transaction-routing.module.ts" />
     <None Remove="ClientApp\src\app\transaction\transaction.component.ts" />
+    <None Remove="ClientApp\src\app\transaction\transaction.model.ts" />
     <None Remove="ClientApp\src\app\transaction\transaction.module.ts" />
+    <None Remove="ClientApp\src\app\transaction\transaction.service.ts" />
     <None Remove="ClientApp\src\app\transaction\upload\upload.component.ts" />
     <None Remove="ClientApp\src\app\transaction\upload\upload.service.ts" />
     <None Remove="ClientApp\src\app\transaction\view\view.component.ts" />
@@ -44,7 +46,9 @@
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\transaction\models\transaction.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\transaction\transaction.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\upload\upload.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\upload\upload.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\transaction\view\view.component.ts" />

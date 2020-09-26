@@ -1,1 +1,9 @@
-<h3>View Transactions</h3>
+<div class="container">
+  <h1 id="tableLabel">View transactions</h1>
+
+  <ag-grid-angular class="ag-theme-balham"
+                   style="height:300px;"
+                   [rowData]="rowData"
+                   [columnDefs]="columnDefs">
+  </ag-grid-angular>
+</div>

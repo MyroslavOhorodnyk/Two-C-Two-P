@@ -72,7 +72,7 @@ namespace Two_C_Two_P.Infrastructure.FileReaders.Csv
             var style = NumberStyles.Number;
             if (Decimal.TryParse(values[1], style, provider, out decimal result))
             {
-                transaction.Ammount = result;
+                transaction.Amount = result;
             }
             else
             {
