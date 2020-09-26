@@ -71,7 +71,7 @@ namespace Two_C_Two_P.Infrastructure.FileReaders.Xml
             var style = NumberStyles.Number;
             if (Decimal.TryParse(xmlObject.PaymentDetails.Amount, style, provider, out decimal result))
             {
-                transaction.Ammount = result;
+                transaction.Amount = result;
             }
             else
             {

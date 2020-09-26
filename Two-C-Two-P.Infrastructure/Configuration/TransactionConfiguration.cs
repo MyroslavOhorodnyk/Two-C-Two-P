@@ -9,7 +9,7 @@ namespace Two_C_Two_P.Infrastructure.Configuration
     {
         protected override void ConfigureInternal(EntityTypeBuilder<Transaction> builder)
         {
-            builder.Property(e => e.Ammount).HasColumnType("decimal(19, 4)");
+            builder.Property(e => e.Amount).HasColumnType("decimal(19, 4)");
 
             builder.Property(e => e.Currency)
                 .IsRequired()
